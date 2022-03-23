@@ -36,14 +36,12 @@
  */
 namespace www\App\Core;
 
-require_once 'App/Core/DB.php';
-
 use Exception;
 
 /**
  *
  * @author IVANB
- *
+ *        
  */
 class DBConnection
 {

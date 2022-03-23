@@ -1,0 +1,3 @@
+[submodule "www/admin/www/admin/ClassABM"]
+	path = www/admin/www/admin/ClassABM
+	url = https://github.com/Pandora-inc/ClassABM.git

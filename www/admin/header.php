@@ -1,19 +1,91 @@
-<div id="fixed"><img src="../img/subastas-online-martin-sarachaga.jpg" alt="Martín Sarachaga Subastas Online" title="Martín Sarachaga Subastas Online" border="0" id="logoheader">
-<div id="headertop">
-	<div class="bot2" id="litop"><a href="iniciar-sesion.php" class="bot1">Cerrar Sesion</a></div>
-</div>
-<header>
-	<div id="header">
-	<div class="menu_bar">
-			<a href="#" class="bt-menu"><img src="../img/nav.svg" width="24" height="24"  alt=""/></a>
-		</div>
-			<nav>
-				<div id="tdmenu">
-			<ul>
-				<li class="bot"><a href="#" class="bot">Menú</a></li>
-			</ul>
-		</div>
-		</nav>
-	</div>
-</header>
+<?php
+
+function is_session_started()
+{
+    if (php_sapi_name() !== 'cli') // Devuelve el tipo de interfaz que hay entre PHP y el servidor
+    {
+        if (version_compare(phpversion(), '5.4.0', '>=')) // Comparamos la vercion de php
+        {
+            return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
+        } else {
+            return session_id() === '' ? FALSE : TRUE;
+        }
+    }
+    return FALSE;
+}
+
+if (is_session_started() === FALSE) {
+
+    session_start();
+}
+
+if (! in_array('token', $_SESSION) || $_SESSION['token'] == null || $_SESSION['admin'] == 0) {
+    header('Location: ../iniciar-sesion.php');
+}
+?>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description"
+	content="Subastas online. Registrate y subasta desde tu casa." />
+<meta name="keywords"
+	content="subastas,subastas online,sarachaga,martin sarachaga,cuadros,arte,obras de arte,lotes,ofertas,galeria,remates,venta online">
+<meta name="Language" content="Spanish" />
+<meta name="Title" content="Martín Sarachaga Subastas Online" />
+<title>Martín Sarachaga Subastas Online</title>
+<link rel="stylesheet" href="../css/subastas-css.css" />
+<link rel="stylesheet" href="../css/subastas-responsive.css" />
+<link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="../img/apple-touch-icon-114x114.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="../js/menu.js"></script>
+<link rel="stylesheet" href="../css/sheetslider.min.css" />
+</head>
+<div id="fixed">
+	<img src="../img/subastas-online-martin-sarachaga.jpg"
+		alt="Martín Sarachaga Subastas Online"
+		title="Martín Sarachaga Subastas Online" border="0" id="logoheader">
+	<div id="headertop">	<?php
+if ($_SESSION['token'] == null) {
+    ?>		<div class="bot2" id="litop">
+			<a href="../iniciar-sesion.php" class="bot1">Inicio de Sesion</a>
+		</div>		<?php
+} else {
+    ?>    <div class="bor" id="litop">
+			<a href="../iniciar-sesion.php" class="bot1">Cerrar de Sesion</a>
+		</div><?php
+}
+?>	</div>
+	<header>
+		<div id="header">
+			<div class="menu_bar">
+				<a href="#" class="bt-menu"><img src="../img/nav.svg" width="24"
+					height="24" alt="" /></a>
+			</div>
+			<nav>
+				<div id="tdmenu">
+					<ul>
+						<li class="bot"><a href="abm_usuarios.php" class="bot">Usuarios</a></li>
+						<li class="bot"><a href="abm_ofertas.php" class="bot">Ofertas</a></li>
+						<li class="bot"><a href="adm_subastas.php" class="bot">Subastas</a></li>
+						<li class="bot"><a href="abm_subastas_online.php" class="bot">Subastas
+								Online</a></li>
+						<li class="bot"><a href="abm_ganadores.php" class="bot">Ganadores</a></li>
+						<ul>
+				
+				</div>
+			</nav>
+		</div>
+	</header>
 </div>

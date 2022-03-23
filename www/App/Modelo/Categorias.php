@@ -9,7 +9,7 @@ namespace www\App\Modelo;
 class Categorias implements iModeloStandar
 {
 
-    private const BASE_DB = "martinsa_base_prueba.";
+    // private const BASE_DB = "martinsa_base_prueba.";
 
     /**
      * Identificador de la categoria.

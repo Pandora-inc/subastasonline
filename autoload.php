@@ -1,7 +1,8 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+// FIXME hay que arreglar el tema de los headers para que no tire error
+// header('Access-Control-Allow-Origin: *');
+// header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+// header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 
 // Definimos un autoload.
 spl_autoload_register(function ($className) {

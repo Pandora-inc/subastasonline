@@ -8,7 +8,7 @@ use www\App\Core\DBConnection;
 /**
  *
  * @author IVANB
- *
+ *        
  */
 class Objetos implements iModeloStandar
 {
@@ -446,7 +446,7 @@ class Objetos implements iModeloStandar
     /**
      * Retorna el valor del campo $autor
      *
-     * @return \www\App\Modelo\Autores
+     * @return Autores
      */
     public function getAutor()
     {
@@ -704,7 +704,7 @@ class Objetos implements iModeloStandar
     /**
      * Funcion de carga de datos del parametro $autor
      *
-     * @param \www\App\Modelo\Autores $autor
+     * @param Autores $autor
      */
     public function setAutor($autor)
     {

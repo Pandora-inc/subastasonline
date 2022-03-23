@@ -1,0 +1,950 @@
+[18-Sep-2021 11:59:37 UTC] PHP Fatal error:  Uncaught Error: Class 'www\App\Controlers\UsuariosController' not found in /home/martinsa/public_html/www/App/Varios/crearUsuario.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/crearUsuario.php on line 5
+[18-Sep-2021 12:57:16 UTC] PHP Fatal error:  Uncaught Error: Class 'www\App\Controlers\UsuariosController' not found in /home/martinsa/public_html/www/App/Varios/crearUsuario.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/crearUsuario.php on line 5
+[18-Sep-2021 13:10:15 UTC] PHP Fatal error:  Uncaught Error: Class 'www\App\Controlers\UsuariosController' not found in /home/martinsa/public_html/www/App/Varios/crearUsuario.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/crearUsuario.php on line 5
+[18-Sep-2021 13:11:49 UTC] PHP Warning:  require_once(App/Core/config.php): failed to open stream: No such file or directory in /home/martinsa/public_html/www/App/Varios/crearUsuario.php on line 4
+[18-Sep-2021 13:11:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'App/Core/config.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/martinsa/public_html/www/App/Varios/crearUsuario.php on line 4
+[18-Sep-2021 13:15:18 UTC] PHP Warning:  require_once(App/Core/DB.php): failed to open stream: No such file or directory in /home/martinsa/public_html/www/App/Core/DBConnection.php on line 39
+[18-Sep-2021 13:15:18 UTC] PHP Fatal error:  require_once(): Failed opening required 'App/Core/DB.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/martinsa/public_html/www/App/Core/DBConnection.php on line 39
+[18-Sep-2021 13:17:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 13:30:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:66) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 13:34:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:66) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:10:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:16) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:13:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:16) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:15:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Modelo\Usuarios::insertUsuarios() in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:90
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 90
+[18-Sep-2021 23:19:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Modelo\Usuarios::insertUsuarios() in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:90
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 90
+[18-Sep-2021 23:20:22 UTC] PHP Warning:  PDOStatement::bindParam(): SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based in /home/martinsa/public_html/www/App/Core/DB.php on line 220
+[18-Sep-2021 23:20:22 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/martinsa/public_html/www/App/Core/DB.php on line 226
+[18-Sep-2021 23:20:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:220) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:30:18 UTC] PHP Warning:  PDOStatement::bindParam(): SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based in /home/martinsa/public_html/www/App/Core/DB.php on line 220
+[18-Sep-2021 23:30:18 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/martinsa/public_html/www/App/Core/DB.php on line 226
+[18-Sep-2021 23:30:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:220) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:34:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:234) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:38:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:227) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[18-Sep-2021 23:40:12 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in /home/martinsa/public_html/www/App/Core/DB.php on line 943
+[19-Sep-2021 00:14:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:234) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 10:55:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Core\DB::fetchObject() in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:178
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(149): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 178
+[19-Sep-2021 21:17:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Core\DB::fetchObject() in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:178
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(149): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 178
+[19-Sep-2021 21:17:40 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getById() must be an object, array returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[19-Sep-2021 21:26:21 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getById() must be an instance of www\App\Modelo\Usuarios, array returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[19-Sep-2021 21:32:05 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getById() must be an instance of www\App\Modelo\Usuarios, array returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[19-Sep-2021 21:32:37 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getById() must be an instance of www\App\Modelo\Usuarios, array returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:181
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 181
+[19-Sep-2021 21:34:20 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 2 to be int, string given in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 178
+[19-Sep-2021 21:34:20 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:181
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 181
+[19-Sep-2021 21:35:29 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 2 to be int, string given in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 178
+[19-Sep-2021 21:35:29 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:181
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 181
+[19-Sep-2021 21:36:30 UTC] PHP Warning:  PDOStatement::fetch() expects parameter 2 to be int, string given in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 178
+[19-Sep-2021 21:36:30 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:181
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(150): www\App\Modelo\Usuarios->getById(1)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 181
+[19-Sep-2021 21:36:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:150) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 21:48:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 21:49:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 21:58:28 UTC] PHP Deprecated:  The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  A non-numeric value encountered in /home/martinsa/public_html/www/App/Core/DB.php on line 887
+[19-Sep-2021 21:58:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:887) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 22:00:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 22:07:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 22:10:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 22:10:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Modelo/Usuarios.php:149) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Sep-2021 23:12:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:234) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 10:59:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:214) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 11:00:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:238) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 11:06:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:238) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 11:18:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:201) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 11:21:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[20-Sep-2021 12:09:58 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in /home/martinsa/public_html/www/App/Core/DB.php on line 954
+[20-Sep-2021 13:30:16 UTC] PHP Fatal error:  Uncaught PDOException in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(156): www\App\Core\DB->query('INSERT INTO mar...', true, Array)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[20-Sep-2021 13:35:13 UTC] PHP Fatal error:  Uncaught PDOException in /home/martinsa/public_html/www/App/Core/DB.php:229
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(156): www\App\Core\DB->query('INSERT INTO mar...', true, Array)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(90): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 229
+[20-Sep-2021 13:37:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+------------------------------
+[15-Oct-2021 12:39:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/crearUsuario.php:7) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:33:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:36:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:36:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:44:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:44:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:45:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:48:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/crearUsuario.php:10) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:52:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/crearUsuario.php:10) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:54:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/crearUsuario.php:10) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 13:55:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/crearUsuario.php:10) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 14:01:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 14:02:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:13) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[15-Oct-2021 23:27:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Modelo\Usuarios::getByEmail() in /home/martinsa/public_html/www/App/Core/AuthToken.php:45
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#1 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#2 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 45
+[15-Oct-2021 23:57:48 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:198
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(45): www\App\Modelo\Usuarios->getByEmail('iberlot')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 198
+[15-Oct-2021 23:57:58 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:198
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(45): www\App\Modelo\Usuarios->getByEmail('iberlot')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 198
+[16-Oct-2021 00:54:04 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:198
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(45): www\App\Modelo\Usuarios->getByEmail('iberlot')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 198
+[16-Oct-2021 01:10:44 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getByEmail() must be an instance of www\App\Modelo\Usuarios, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:199
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(45): www\App\Modelo\Usuarios->getByEmail('iberlot')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 199
+[16-Oct-2021 03:11:25 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getByEmail() must be an instance of www\App\Modelo\Usuarios, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:199
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(45): www\App\Modelo\Usuarios->getByEmail('iberlot')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 199
+[16-Oct-2021 11:37:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Modelo\Usuarios::getpassword_Usuarios() in /home/martinsa/public_html/www/App/Core/AuthToken.php:54
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#1 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#2 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 54
+[16-Oct-2021 11:48:49 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:424
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(54): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 424
+[16-Oct-2021 11:51:46 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:425
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(54): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 425
+[16-Oct-2021 11:56:28 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:425
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(55): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 425
+[16-Oct-2021 11:58:00 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:426
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(55): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 426
+[16-Oct-2021 12:06:38 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:426
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(56): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 426
+[16-Oct-2021 12:06:55 UTC] PHP Fatal error:  Uncaught TypeError: Return value of www\App\Modelo\Usuarios::getPassword() must be of the type string, null returned in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:426
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(56): www\App\Modelo\Usuarios->getPassword()
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('iberlot', 'Julia3134')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 426
+[16-Oct-2021 12:21:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/loginUsuario.php:9) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[16-Oct-2021 12:36:47 UTC] PHP Fatal error:  Uncaught Exception: Imposible cargar /home/martinsa/public_html/Lcobucci/JWT/Signer/Hmac/Sha256.php. in /home/martinsa/public_html/autoload.php:20
+Stack trace:
+#0 [internal function]: {closure}('Lcobucci/JWT/Si...')
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(123): spl_autoload_call('Lcobucci\\JWT\\Si...')
+#2 /home/martinsa/public_html/www/App/Core/AuthToken.php(60): www\App\Core\AuthToken->generateToken(4)
+#3 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('frey@usal.edu.a...', '11111111')
+#4 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#5 {main}
+  thrown in /home/martinsa/public_html/autoload.php on line 20
+[16-Oct-2021 13:28:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Modelo\Usuarios::getnombre_Usuarios() in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:36
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 36
+[17-Oct-2021 21:55:36 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:185
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 185
+[17-Oct-2021 22:29:39 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:185
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 185
+[17-Oct-2021 22:38:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method www\App\Controlers\LotesController::requireAuth() in /home/martinsa/public_html/www/App/Controlers/LotesController.php:15
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/LotesController.php on line 15
+[17-Oct-2021 23:05:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 140 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(140): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[17-Oct-2021 23:45:42 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 140 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(140): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[17-Oct-2021 23:56:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 141 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(141): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[18-Oct-2021 00:25:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 142 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(142): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(102): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[18-Oct-2021 00:28:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 140 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(140): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[18-Oct-2021 00:33:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:147
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 147
+[18-Oct-2021 00:46:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:147
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 147
+[18-Oct-2021 00:54:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:147
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 147
+[18-Oct-2021 01:01:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:149
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 149
+[18-Oct-2021 01:30:14 UTC] PHP Fatal error:  Uncaught BadMethodCallException: This token is not signed in /home/martinsa/public_html/www/App/Lcobucci/JWT/Token.php:196
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(147): www\App\Lcobucci\JWT\Token->verify(Object(www\App\Lcobucci\JWT\Signer\Hmac\Sha256), '8u12821unp2+doi...')
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(99): www\App\Core\AuthToken->verificarToken(Object(www\App\Lcobucci\JWT\Token))
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Lcobucci/JWT/Token.php on line 196
+[18-Oct-2021 01:40:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:147
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 147
+[18-Oct-2021 01:40:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function validate() on null in /home/martinsa/public_html/www/App/Core/AuthToken.php:146
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#3 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#4 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 146
+[18-Oct-2021 01:41:54 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 140 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(140): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(100): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[27-Oct-2021 20:55:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 144 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(144): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(104): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[27-Oct-2021 20:55:56 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Envorinment\Parser::__construct(), 0 passed in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 144 and exactly 1 expected in /home/martinsa/public_html/www/App/Envorinment/Parser.php:18
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(144): www\App\Envorinment\Parser->__construct()
+#1 /home/martinsa/public_html/www/App/Core/AuthToken.php(104): www\App\Core\AuthToken->verificarToken('eyJ0eXAiOiJKV1Q...')
+#2 /home/martinsa/public_html/www/App/Controlers/LotesController.php(17): www\App\Core\AuthToken->estaAutenticado()
+#3 /home/martinsa/public_html/www/App/Controlers/LotesController.php(28): www\App\Controlers\LotesController->requireAuth()
+#4 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#5 {main}
+  thrown in /home/martinsa/public_html/www/App/Envorinment/Parser.php on line 18
+[28-Oct-2021 21:45:31 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 21:46:31 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 21:57:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 21:57:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 21:58:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 21:59:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:10:05 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(9): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:10:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(9): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:10:51 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(9): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:11:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(9): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:11:36 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(9): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[28-Oct-2021 22:15:09 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:214
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(50): www\App\Modelo\Usuarios->getByUsuario('RTYH')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('RTYH', 'rty')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 214
+[29-Oct-2021 15:39:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 15:41:37 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 15:43:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Controlers\dd() in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:17
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 17
+[29-Oct-2021 15:44:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\var_dumo() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 9
+[29-Oct-2021 15:46:34 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:47:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:51:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:51:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:52:23 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:52:41 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:52:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:53:19 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 9
+[29-Oct-2021 15:53:19 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:53:45 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:53:58 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 9
+[29-Oct-2021 15:53:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:54:12 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:54:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:54:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 15:56:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 10
+[29-Oct-2021 16:09:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/martinsa/public_html/www/App/Core/config.php on line 5
+[29-Oct-2021 16:09:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/loginUsuario.php:3) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[29-Oct-2021 16:09:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Varios/loginUsuario.php:3) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[29-Oct-2021 16:52:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:52:12 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:52:40 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:53:04 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:57:02 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:57:05 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 16:57:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getByEmail() must be of the type string, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 47 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:180
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(47): www\App\Modelo\Usuarios->getByEmail(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(21): www\App\Core\AuthToken->login(NULL, NULL)
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(10): www\App\Controlers\UsuariosController->login(NULL, NULL)
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 180
+[29-Oct-2021 17:06:02 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function www\App\Controlers\UsuariosController::login(), 0 passed in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 12 and exactly 2 expected in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php:12
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(12): www\App\Controlers\UsuariosController->login()
+#1 {main}
+  thrown in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 12
+[29-Oct-2021 17:56:45 UTC] PHP Parse error:  syntax error, unexpected 'www' (T_STRING) in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 1
+[29-Oct-2021 17:57:40 UTC] PHP Parse error:  syntax error, unexpected 'www' (T_STRING) in /home/martinsa/public_html/www/App/Controlers/UsuariosController.php on line 1
+[06-Nov-2021 23:45:18 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:214
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(50): www\App\Modelo\Usuarios->getByUsuario('freadssady@usal...')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('freadssady@usal...', '11111111')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(12): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 214
+[06-Nov-2021 23:49:31 UTC] PHP Fatal error:  Uncaught Exception: Usuario no encontrado in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:214
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(50): www\App\Modelo\Usuarios->getByUsuario('freadssady@usal...')
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(20): www\App\Core\AuthToken->login('freadssady@usal...', '11111111')
+#2 /home/martinsa/public_html/www/App/Varios/loginUsuario.php(12): www\App\Controlers\UsuariosController->login()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 214
+[07-Nov-2021 14:17:41 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getById() must be of the type int, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 195 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:163
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(195): www\App\Modelo\Usuarios->getById(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(33): www\App\Core\AuthToken->getUsuario()
+#2 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 163
+[07-Nov-2021 14:37:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to www\App\Modelo\Usuarios::getById() must be of the type int, null given, called in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 195 and defined in /home/martinsa/public_html/www/App/Modelo/Usuarios.php:163
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Core/AuthToken.php(195): www\App\Modelo\Usuarios->getById(NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(33): www\App\Core\AuthToken->getUsuario()
+#2 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Modelo/Usuarios.php on line 163
+[07-Nov-2021 14:38:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/LotesController.php:38) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[07-Nov-2021 14:56:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/LotesController.php:38) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[07-Nov-2021 14:58:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/LotesController.php:38) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[07-Nov-2021 15:00:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/LotesController.php:38) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[07-Nov-2021 15:05:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Controlers/LotesController.php:38) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[07-Nov-2021 15:07:29 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/martinsa/public_html/www/App/Core/DB.php on line 227
+[07-Nov-2021 15:07:29 UTC] PHP Fatal error:  Uncaught PDOException in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/OfertasLote.php(150): www\App\Core\DB->query('INSERT INTO mar...', true, Array)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(64): www\App\Modelo\OfertasLote->nuevo_id(128908)
+#2 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[07-Nov-2021 15:17:29 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/martinsa/public_html/www/App/Core/DB.php on line 227
+[07-Nov-2021 15:17:29 UTC] PHP Fatal error:  Uncaught PDOException in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/OfertasLote.php(156): www\App\Core\DB->query('INSERT INTO mar...', true, Array)
+#1 /home/martinsa/public_html/www/App/Controlers/LotesController.php(64): www\App\Modelo\OfertasLote->nuevo_id(128908)
+#2 /home/martinsa/public_html/www/App/Varios/ofertar.php(10): www\App\Controlers\LotesController->Ofertar()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:12:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:12:11 UTC] PHP Fatal error:  Uncaught PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :...' at line 1 in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(137): www\App\Core\DB->query('INSERT INTO mar...', true, NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(122): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 00:55:30 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 00:55:30 UTC] PHP Fatal error:  Uncaught PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :...' at line 1 in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(137): www\App\Core\DB->query('INSERT INTO mar...', true, NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(122): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:04:07 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:04:07 UTC] PHP Fatal error:  Uncaught PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :...' at line 1 in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(139): www\App\Core\DB->query('INSERT INTO mar...', true, NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(122): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:05:03 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:05:03 UTC] PHP Fatal error:  Uncaught PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :...' at line 1 in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(141): www\App\Core\DB->query('INSERT INTO mar...', true, NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(122): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 213
+[09-Nov-2021 01:09:48 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/martinsa/public_html/www/App/Core/DB.php on line 217
+[09-Nov-2021 01:09:48 UTC] PHP Fatal error:  Uncaught PDOException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :...' at line 1 in /home/martinsa/public_html/www/App/Core/DB.php:228
+Stack trace:
+#0 /home/martinsa/public_html/www/App/Modelo/Usuarios.php(141): www\App\Core\DB->query('INSERT INTO mar...', true, NULL)
+#1 /home/martinsa/public_html/www/App/Controlers/UsuariosController.php(122): www\App\Modelo\Usuarios->nuevo()
+#2 /home/martinsa/public_html/www/App/Varios/crearUsuario.php(10): www\App\Controlers\UsuariosController->registrarUsuarios()
+#3 {main}
+  thrown in /home/martinsa/public_html/www/App/Core/DB.php on line 228
+[10-Nov-2021 21:55:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 4
+[10-Nov-2021 21:55:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 4
+[10-Nov-2021 21:56:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 4
+[10-Nov-2021 21:58:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 6
+[10-Nov-2021 22:02:36 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/martinsa/public_html/www/App/Core/config.php on line 21
+[10-Nov-2021 22:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 8
+[10-Nov-2021 22:11:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function www\App\Varios\is_session_started() in /home/martinsa/public_html/www/App/Varios/loginUsuario.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/martinsa/public_html/www/App/Varios/loginUsuario.php on line 8
+[19-Nov-2021 16:02:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[19-Nov-2021 16:02:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[19-Nov-2021 22:56:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[19-Nov-2021 22:56:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:40:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:40:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:41:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:41:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 20:43:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 20:43:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 23:34:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 23:34:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 23:34:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 23:34:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 23:34:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 23:34:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55
+[21-Dec-2021 23:34:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/AuthToken.php on line 68
+[21-Dec-2021 23:34:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/martinsa/public_html/www/App/Core/DB.php:237) in /home/martinsa/public_html/www/App/Core/View.php on line 55

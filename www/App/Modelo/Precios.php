@@ -12,14 +12,15 @@ use www\App\Core\DBConnection;
 class Precios implements iModeloStandar
 {
 
-    private const BASE_DB = "martinsa_base_prueba.";
-
+    // private const BASE_DB = "martinsa_base_prueba.";
     private const TIPOS_PRECIOS = array(
         'Base inicial',
         'Base',
         'Estimativo',
         'Estimativo Maximo',
-        'Fijo'
+        'Fijo',
+        'Actual subasta',
+        'Aumento'
     );
 
     private const CAMPOS = array(
@@ -42,6 +43,10 @@ class Precios implements iModeloStandar
         'Fijo' => array(
             'moneda' => "monedapreciofijo",
             'precio' => "preciofijo"
+        ),
+        'Aumento' => array(
+            'moneda' => "",
+            'precio' => "precioaumento"
         )
     );
 
@@ -78,8 +83,20 @@ class Precios implements iModeloStandar
 
     /**
      */
-    public function __construct(string $tipo)
-    {}
+    public function __construct(string $tipo, string $moneda = "", float $precio = 0)
+    {
+        if (in_array($tipo, self::TIPOS_PRECIOS)) {
+            $this->tipo = $tipo;
+            if ($moneda != "") {
+                $this->moneda = $moneda;
+            }
+            if ($precio > 0) {
+                $this->precio = $precio;
+            }
+        } else {
+            throw new Exception("Tipo de precio invalido.");
+        }
+    }
 
     /**
      * (non-PHPdoc)
@@ -94,15 +111,17 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::nuevo()
      */
-    public function nuevo()
-    {}
+    public function nuevo(): bool
+    {
+        return true;
+    }
 
     /**
      * (non-PHPdoc)
      *
      * @see \www\App\Modelo\iModeloStandar::deleteThis()
      */
-    public function deleteThis()
+    public function deleteThis(): bool
     {
         return $this->deleteById($this->id);
     }
@@ -112,7 +131,7 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::getById()
      */
-    public function getById($id)
+    public function getById($id): object
     {}
 
     /**
@@ -147,7 +166,7 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::deleteById()
      */
-    public function deleteById($id)
+    public function deleteById($id): bool
     {}
 
     /**
@@ -155,7 +174,7 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::getByThis()
      */
-    public function getByThis()
+    public function getByThis(): object
     {
         return $this->getById($this->id);
     }
@@ -165,7 +184,7 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::updateThis()
      */
-    public function updateThis()
+    public function updateThis(): bool
     {
         return $this->updateById($this->id, $this->jsonSerialize());
     }
@@ -175,7 +194,7 @@ class Precios implements iModeloStandar
      *
      * @see \www\App\Modelo\iModeloStandar::updateById()
      */
-    public function updateById($id, array $parametros)
+    public function updateById($id, array $parametros): bool
     {
         // $sql = "UPDATE `objetos` SET `monedapreciobaseinicial`=[value-24] WHERE `id` = ";
     }
@@ -217,7 +236,11 @@ class Precios implements iModeloStandar
      */
     public function getPrecio(): float
     {
-        return $this->precio;
+        if ($this->precio != null) {
+            return $this->precio;
+        } else {
+            return 0;
+        }
     }
 
     /**

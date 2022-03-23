@@ -12,6 +12,10 @@ use JsonSerializable;
 interface iModeloStandar extends JsonSerializable
 {
 
+    const BASE_DB = "admarsar_sarachaga.";
+
+    const BASE_DB_SUBASTAS = "admarsar_subastas_online.";
+
     /**
      * Carga en la base de datos el registro con todos los datos asociados en la clase.
      *

@@ -2,6 +2,7 @@
 namespace www\App\Modelo;
 
 use Exception;
+use PDO;
 use www\App\Core\DBConnection;
 
 /**
@@ -111,30 +112,13 @@ class Usuarios implements iModeloStandar
      */
     protected $estado;
 
+    protected $admin;
+
     /**
      * (non-PHPdoc)
      *
      * @see iModeloStandar::jsonSerialize()
      */
-    public function jsonSerialize()
-    {
-        $parametros = array();
-
-        $parametros['nombre'] = $this->nombre;
-        $parametros['apellido'] = $this->apellido;
-        $parametros['email'] = $this->email;
-        $parametros['documento'] = $this->documento;
-        $parametros['direccion'] = $this->direccion;
-        $parametros['localidad'] = $this->localidad;
-        $parametros['provincia'] = $this->provincia;
-        $parametros['pais'] = $this->pais;
-        $parametros['celular'] = $this->celular;
-        $parametros['prefijo'] = $this->prefijo;
-        $parametros['apodo'] = $this->apodo;
-        $parametros['password'] = $this->password;
-
-        return $parametros;
-    }
 
     /**
      * Inserta los datos del usuario en la base de datos.
@@ -146,10 +130,15 @@ class Usuarios implements iModeloStandar
     {
         $db = DBConnection::getConnection();
 
-        $sql = "INSERT INTO martinsa_subastas_online.usuarios (nombre, apellido, email, documento, direccion, localidad, provincia, pais, celular, prefijo, apodo, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        // print_r($this);
+
+        // $sql = "INSERT INTO martinsa_subastas_online.usuarios (nombre, apellido, email, documento, direccion, localidad, provincia, pais, celular, prefijo, apodo, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO martinsa_subastas_online.usuarios (nombre, apellido, email, documento, direccion, localidad, provincia, pais, celular, prefijo, apodo, password) VALUES (:nombre, :apellido, :email, :documento, :direccion, :localidad, :provincia, :pais, :celular, :prefijo, :apodo, :password)";
 
         $parametros = array();
         $parametros = $this->jsonSerialize();
+
+        // print_r($parametros);
 
         if ($db->query($sql, true, $parametros)) {
             return true;
@@ -158,25 +147,76 @@ class Usuarios implements iModeloStandar
         }
     }
 
+    public function listar()
+    {
+        $db = DBConnection::getConnection();
+
+        $sql = "SELECT * FROM " . self::BASE_DB_SUBASTAS . "usuarios";
+
+        $rest = $db->query($sql);
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+            return $fila;
+        } else {
+            throw new Exception("No hay usuarios");
+        }
+    }
+
     /**
      * (non-PHPdoc)
      *
      * @see iModeloStandar::getById()
      */
-    public function getById(int $id): object
+    public function getById(int $id): self
     {
         $db = DBConnection::getConnection();
 
-        $sql = "SELECT * FROM martinsa_subastas_online.usuariosWHERE id = ?";
+        $sql = "SELECT * FROM " . self::BASE_DB_SUBASTAS . "usuarios WHERE id = ?";
 
         $parametros = array();
         $parametros[] = $id;
 
         $rest = $db->query($sql, true, $parametros);
-
-        if ($fila = $db->fetchObject($rest, self::class)) {
-            return $fila;
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+            return $fila[0];
         } else {
+            throw new Exception("Usuario con el ID ".$id." no encontrado");
+        }
+    }
+
+    public function getByEmail(string $email): self
+    {
+        $db = DBConnection::getConnection();
+
+        $sql = "SELECT * FROM " . self::BASE_DB_SUBASTAS . "usuarios WHERE email = ?";
+
+        $parametros = array();
+        $parametros[] = $email;
+
+        $rest = $db->query($sql, true, $parametros);
+
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+            return $fila[0];
+        } else {
+            // return new Usuarios();
+            throw new Exception("Usuario con el email ".$email." no encontrado");
+        }
+    }
+
+    public function getByUsuario(string $apodo): self
+    {
+        $db = DBConnection::getConnection();
+
+        $sql = "SELECT * FROM " . self::BASE_DB_SUBASTAS . "usuarios WHERE apodo = ?";
+
+        $parametros = array();
+        $parametros[] = $apodo;
+
+        $rest = $db->query($sql, true, $parametros);
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+
+            return $fila[0];
+        } else {
+            // return new Usuarios();
             throw new Exception("Usuario no encontrado");
         }
     }
@@ -254,7 +294,7 @@ class Usuarios implements iModeloStandar
             $param[$key] = $value;
         }
 
-        $sql = "UPDATE martinsa_subastas_online.usuarios SET " . $datos . " WHERE id=?";
+        $sql = "UPDATE " . self::BASE_DB_SUBASTAS . "usuarios SET " . $datos . " WHERE id=?";
 
         $param['id'] = $id;
 
@@ -386,6 +426,16 @@ class Usuarios implements iModeloStandar
         return $this->password;
     }
 
+    /**
+     * Retorna el valor del campo $estado
+     *
+     * @return boolean
+     */
+    public function isEstado()
+    {
+        return $this->estado;
+    }
+
     /* ************* */
     /* ** SETTERS ** */
     /* ************* */
@@ -508,5 +558,56 @@ class Usuarios implements iModeloStandar
     public function setPassword(string $password)
     {
         $this->password = password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $estado
+     *
+     * @param boolean $estado
+     */
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+    }
+
+    public function jsonSerialize()
+    {
+        $parametros = array();
+
+        $parametros['nombre'] = $this->getNombre();
+        $parametros['apellido'] = $this->getApellido();
+        $parametros['email'] = $this->getEmail();
+        $parametros['documento'] = $this->getDocumento();
+        $parametros['direccion'] = $this->getDireccion();
+        $parametros['localidad'] = $this->getLocalidad();
+        $parametros['provincia'] = $this->getProvincia();
+        $parametros['pais'] = $this->getPais();
+        $parametros['celular'] = $this->getCelular();
+        $parametros['prefijo'] = $this->getPrefijo();
+        $parametros['apodo'] = $this->getApodo();
+        $parametros['password'] = $this->getPassword();
+        $parametros['admin'] = $this->isAdmin();
+
+        return $parametros;
+    }
+
+    /**
+     * Retorna el valor del campo $admin
+     *
+     * @return boolean
+     */
+    public function isAdmin()
+    {
+        return $this->admin;
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $admin
+     *
+     * @param mixed $admin
+     */
+    public function setAdmin($admin)
+    {
+        $this->admin = $admin;
     }
 }

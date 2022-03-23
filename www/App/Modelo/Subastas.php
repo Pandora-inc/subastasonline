@@ -1,8 +1,6 @@
 <?php
 namespace www\App\Modelo;
 
-require_once '/home/martinsa/public_html/autoload.php';
-
 use DateTime;
 use Exception;
 use PDO;
@@ -16,9 +14,9 @@ use www\App\Core\DBConnection;
 class Subastas implements iModeloStandar
 {
 
-    private const BASE_DB = "martinsa_base_prueba.";
+    // private const BASE_DB = "martinsa_base_prueba.";
 
-    private const BASE_DB_SUBASTAS = "martinsa_subastas_online.";
+    // private const BASE_DB_SUBASTAS = "martinsa_subastas_online.";
 
     /**
      * Numero identificador de la subasta
@@ -132,6 +130,24 @@ class Subastas implements iModeloStandar
      */
     private $subasta_online;
 
+    /**
+     *
+     * @var \DateTime
+     */
+    private $hora_inicio;
+
+    /**
+     *
+     * @var \DateTime
+     */
+    private $hora_fin;
+
+    /**
+     *
+     * @var Lotes[]
+     */
+    private $lotes;
+
     // FIXME falta agregar un array con los lotes que tiene esta bubasta
 
     /**
@@ -156,7 +172,9 @@ class Subastas implements iModeloStandar
         $parametros['nro'] = $this->nro;
         $parametros['noches'] = $this->noches;
         $parametros['fechainicio'] = $this->fechainicio;
+        $parametros['hora_inicio'] = $this->hora_inicio;
         $parametros['fechafin'] = $this->fechafin;
+        $parametros['hora_fin'] = $this->hora_fin;
         $parametros['fechacarga'] = $this->fechacarga;
         $parametros['status'] = $this->status;
         $parametros['comision'] = $this->comision;
@@ -185,15 +203,51 @@ class Subastas implements iModeloStandar
     {
         $db = DBConnection::getConnection();
 
-        $sql = "SELECT * FROM " . self::BASE_DB . "subastas WHERE id = ?";
+        $sql = "SELECT
+
+subastas.id, subastas.nro , subastas.noches, subastas.fechainicio, subastas.fechainicio, subastas.fechacarga, subastas.status, subastas.comision, subastas.iva
+, subastas.cerrada, subastas.linkcatalogo3, subastas.subasta_online,
+subastas_online.titulo, subastas_online.descripcion, subastas_online.imagen_nombre, subastas_online.imagen_link, subastas_online.hora_inicio, subastas_online.hora_fin
+
+ FROM " . self::BASE_DB . "subastas LEFT JOIN " . self::BASE_DB_SUBASTAS . "subastas_online ON subastas_online.id = subastas.id WHERE subastas.id = ?";
 
         $parametros = array();
         $parametros[] = $id;
 
         $rest = $db->query($sql, true, $parametros);
 
-        if ($fila = $db->fetchObject($rest, self::class)) {
-            return $fila;
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+
+            $fila[0]->setLotes((new Lotes())->getBySubasta($id));
+
+            return $fila[0];
+        } else {
+            throw new Exception("Usuario no encontrado");
+        }
+    }
+
+    public function getByLoteId(int $id): object
+    {
+        $db = DBConnection::getConnection();
+
+        $sql = "SELECT
+
+subastas.id, subastas.nro , subastas.noches, subastas.fechainicio, subastas.fechainicio, subastas.fechacarga, subastas.status, subastas.comision, subastas.iva
+, subastas.cerrada, subastas.linkcatalogo3, subastas.subasta_online,
+subastas_online.titulo, subastas_online.descripcion, subastas_online.imagen_nombre, subastas_online.imagen_link, subastas_online.hora_inicio, subastas_online.hora_fin
+
+ FROM " . self::BASE_DB . "subastas LEFT JOIN " . self::BASE_DB_SUBASTAS . "subastas_online ON subastas_online.id = subastas.id WHERE subastas.id = (SELECT subasta FROM " . self::BASE_DB . "lotes WHERE lotes.id = ?)";
+
+        $parametros = array();
+        $parametros[] = $id;
+
+        $rest = $db->query($sql, true, $parametros);
+
+        if ($fila = $rest->fetchAll(PDO::FETCH_CLASS, self::class)) {
+
+            // $fila[0]->setLotes((new Lotes())->getBySubasta($id));
+
+            return $fila[0];
         } else {
             throw new Exception("Usuario no encontrado");
         }
@@ -208,12 +262,19 @@ class Subastas implements iModeloStandar
     {
         $db = DBConnection::getConnection();
 
-        // $sql = "SELECT * FROM " . self::BASE_DB . "subastas WHERE subasta_online = 1 AND cerrada = 0";
-        $sql = "SELECT * FROM " . self::BASE_DB . "subastas LEFT JOIN " . self::BASE_DB_SUBASTAS . "subastas_online ON subastas_online.id = subastas.id WHERE subasta_online = 1 AND cerrada = 0";
+        $sql = "SELECT
+subastas.id, subastas.nro , subastas.noches, subastas.fechainicio, subastas.fechainicio, subastas.fechacarga, subastas.status, subastas.comision, subastas.iva
+, subastas.cerrada, subastas.linkcatalogo3, subastas.subasta_online,
+subastas_online.titulo, subastas_online.descripcion, subastas_online.imagen_nombre, subastas_online.imagen_link, subastas_online.hora_inicio, subastas_online.hora_fin
+FROM " . self::BASE_DB . "subastas LEFT JOIN " . self::BASE_DB_SUBASTAS . "subastas_online ON subastas_online.id = subastas.id WHERE subastas.status = 1 AND subasta_online = 1 AND cerrada = 0";
 
         $rest = $db->query($sql);
 
+        // $resultado = $rest->fetchAll();
+
+        // print_r($resultado);
         return $rest->fetchAll(PDO::FETCH_CLASS, self::class);
+        // return $rest->fetchAll(PDO::FETCH_CLASS, self::class);
     }
 
     /**
@@ -225,11 +286,16 @@ class Subastas implements iModeloStandar
     {
         $db = DBConnection::getConnection();
 
-        $sql = "SELECT * FROM " . self::BASE_DB . "subastas WHERE subasta_online = 1 AND cerrada = 1";
+        $sql = "SELECT
+subastas.id, subastas.nro , subastas.noches, subastas.fechainicio, subastas.fechainicio, subastas.fechacarga, subastas.status, subastas.comision, subastas.iva
+, subastas.cerrada, subastas.linkcatalogo3, subastas.subasta_online,
+subastas_online.titulo, subastas_online.descripcion, subastas_online.imagen_nombre, subastas_online.imagen_link, subastas_online.hora_inicio, subastas_online.hora_fin
+
+ FROM " . self::BASE_DB . "subastas LEFT JOIN " . self::BASE_DB_SUBASTAS . "subastas_online ON subastas_online.id = subastas.id WHERE subasta_online = 1 AND cerrada = 1";
 
         $rest = $db->query($sql);
 
-        return $rest->fetchAll(PDO::FETCH_CLASS, self);
+        return $rest->fetchAll(PDO::FETCH_CLASS, self::class);
     }
 
     public function deleteById(int $id): bool
@@ -409,6 +475,26 @@ class Subastas implements iModeloStandar
     }
 
     /**
+     * Retorna el valor del campo $hora_inicio
+     *
+     * @return string
+     */
+    public function getHora_inicio(): string
+    {
+        return ($this->hora_inicio == NULL ? "" : $this->hora_inicio);
+    }
+
+    /**
+     * Retorna el valor del campo $hora_fin
+     *
+     * @return string
+     */
+    public function getHora_fin(): string
+    {
+        return ($this->hora_fin == NULL ? "" : $this->hora_fin);
+    }
+
+    /**
      * Funcion de carga de datos del parametro $id
      *
      * @param number $id
@@ -559,6 +645,26 @@ class Subastas implements iModeloStandar
     }
 
     /**
+     * Funcion de carga de datos del parametro $hora_inicio, el string debe ser del formato hh:mm
+     *
+     * @param string $hora
+     */
+    public function setHoraInicio(string $hora)
+    {
+        $this->hora_inicio = date("H:m", strtotime($hora));
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $hora_fin, el string debe ser del formato hh:mm
+     *
+     * @param string $hora
+     */
+    public function setHoraFin(string $hora)
+    {
+        $this->hora_fin = date("H:m", strtotime($hora));
+    }
+
+    /**
      * Funcion de carga de datos del parametro $subasta_online
      *
      * @param boolean $subasta_online
@@ -566,6 +672,46 @@ class Subastas implements iModeloStandar
     public function setSubasta_online($subasta_online)
     {
         $this->subasta_online = $subasta_online;
+    }
+
+    /**
+     * Retorna el valor del campo $lotes
+     *
+     * @return multitype:\www\App\Modelo\Lotes
+     */
+    public function getLotes()
+    {
+        return $this->lotes;
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $hora_inicio
+     *
+     * @param DateTime $hora_inicio
+     */
+    public function setHora_inicio($hora_inicio)
+    {
+        $this->hora_inicio = $hora_inicio;
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $hora_fin
+     *
+     * @param DateTime $hora_fin
+     */
+    public function setHora_fin($hora_fin)
+    {
+        $this->hora_fin = $hora_fin;
+    }
+
+    /**
+     * Funcion de carga de datos del parametro $lotes
+     *
+     * @param multitype:\www\App\Modelo\Lotes $lotes
+     */
+    public function setLotes($lotes)
+    {
+        $this->lotes = $lotes;
     }
 }
 

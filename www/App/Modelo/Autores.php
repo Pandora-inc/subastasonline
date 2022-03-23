@@ -1,10 +1,9 @@
 <?php
-namespace Modelo;
+namespace www\App\Modelo;
 
 require_once '/home/martinsa/public_html/autoload.php';
 
 use DateTime;
-use www\App\Modelo\iModeloStandar;
 
 /**
  * algo
@@ -15,7 +14,7 @@ use www\App\Modelo\iModeloStandar;
 class Autores implements iModeloStandar
 {
 
-    private const BASE_DB = "martinsa_base_prueba.";
+    // private const BASE_DB = "martinsa_base_prueba.";
 
     // SELECT `id``nombre``Descripcion``anio_nac``anio_def``id_escuela``id_tecnica` FROM `aux_autor` WHERE 1
 

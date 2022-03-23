@@ -198,7 +198,6 @@ class DB extends \PDO
         $statement = self::$db->prepare($str_query);
 
         if ($esParam == true) {
-
             if (($cantidad = substr_count($str_query, ':')) > 0) {
                 $para = explode(':', $str_query);
 
@@ -211,21 +210,25 @@ class DB extends \PDO
 
                     $paraY[0] = trim(str_replace(",", "", $paraY[0]));
 
-                    $parametros[$i] = (string) ($parametros[$i]);
+                    if (array_key_exists($i, $parametros)) {
+                        $parametros[$i] = (string) ($parametros[$i]);
 
-                    $statement->bindParam(":$paraY[0]", $parametros[$i]);
+                        $statement->bindParam(":$paraY[0]", $parametros[$i]);
+                    } else if (array_key_exists($paraY[0], $parametros)) {
+                        $statement->bindParam(":$paraY[0]", $parametros[$paraY[0]]);
+                    }
                 }
             } else if (($cantidad = substr_count($str_query, '?')) > 0) {
                 for ($i = 0; $i < $cantidad; $i ++) {
-                    $statement->bindParam($i, $parametros[$i]);
+                    $statement->bindParam($i + 1, $parametros[$i]);
                 }
             }
         }
+        if ($statement->execute() == false) {
+            throw new PDOException($statement->errorInfo()[2]);
+        }
 
-        if (self::$commit == false) {
-            $statement->execute();
-        } else {
-            $statement->execute();
+        if (self::$commit == true) {
             self::$db->commit();
         }
 
@@ -863,31 +866,36 @@ class DB extends \PDO
      */
     private function imprimirParam($str_query, $parametros)
     {
-        echo "<Br /><Br />";
+        $html = "";
+        $html .= "<Br /><Br />";
 
-        if (self::$dbtype == 'mysql') {} elseif (self::$dbtype == 'oracle') {
-            $cantidad = substr_count($str_query, ':');
-
+        if (($cantidad = substr_count($str_query, ':')) > 0) {
             $para = explode(':', $str_query);
 
             for ($i = 0; $i < $cantidad; $i ++) {
                 $e = $i + 1;
 
                 $paraY = explode(' ', $para[$e]);
+                $paraY[0] = str_replace(")", "", $paraY[0]);
+                $paraY[0] = str_replace(";", "", $paraY[0]);
 
                 $paraY[0] = trim(str_replace(",", "", $paraY[0]));
 
-                $paraY[0] = str_replace(")", "", $paraY[0]);
+                if (array_key_exists($i, $parametros)) {
+                    $parametros[$i] = (string) ($parametros[$i]);
+                } else if (array_key_exists($paraY[0], $parametros)) {
+                    $parametros[$i] = (string) ($parametros[$paraY[0]]);
+                }
 
-                echo "-- :" . $paraY[0] . " = " . $parametros[$i] . "<Br />";
+                $html .= "-- :" . $paraY[0] . " = " . $parametros[$i] . "<Br />";
             }
-        } elseif (self::$dbtype == 'mssql') {
-            $cantidad = substr_count($str_query, '?');
-
+        } else if (($cantidad = substr_count($str_query, '?')) > 0) {
             for ($i = 0; $i < $cantidad; $i ++) {
-                echo "-- ?" . $i . " = " . $parametros[$i] . "<Br />";
+                $html .= "-- ?" . ($i + 1) . " = " . $parametros[$i] . "<Br />";
             }
         }
+
+        echo $html;
     }
 
     /**
